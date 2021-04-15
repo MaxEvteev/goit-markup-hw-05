@@ -76,7 +76,11 @@
                         ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
                         ДЛЯ ВАШЕГО БИЗНЕСА
                     </h1>
-                    <button type="button" class="button-primary">
+                    <button
+                        type="button"
+                        class="button-primary"
+                        data-modal-open
+                    >
                         Заказать услугу
                     </button>
                 </div>
@@ -165,28 +169,43 @@
                     <h2 class="info-hover">Чем мы занимаемся</h2>
                     <ul class="pictures">
                         <li class="picture">
-                            <img
-                                src="images/box1.jpg"
-                                alt="Планшет и клавиатура"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="picture-thumb">
+                                <img
+                                    src="images/box1.jpg"
+                                    alt="Планшет и клавиатура"
+                                    width="370"
+                                    height="294"
+                                />
+                                <div class="picture-overlay">
+                                    ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
+                                </div>
+                            </div>
                         </li>
                         <li class="picture">
-                            <img
-                                src="images/box2.jpg"
-                                alt="Смартфон и ноутбук"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="picture-thumb">
+                                <img
+                                    src="images/box2.jpg"
+                                    alt="Смартфон и ноутбук"
+                                    width="370"
+                                    height="294"
+                                />
+                                <div class="picture-overlay">
+                                    МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
+                                </div>
+                            </div>
                         </li>
                         <li class="picture">
-                            <img
-                                src="images/box3.jpg"
-                                alt="Планшет в руках"
-                                width="370"
-                                height="294"
-                            />
+                            <div class="picture-thumb">
+                                <img
+                                    src="images/box3.jpg"
+                                    alt="Планшет в руках"
+                                    width="370"
+                                    height="294"
+                                />
+                                <div class="picture-overlay">
+                                    ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -660,5 +679,11 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close>Закрыть</button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
